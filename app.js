@@ -5,7 +5,6 @@ app.use(cors());
 
 //פונקציה לקידום תשעה תמונות
 app.get("/api/photos", (req, res) => {
-  console.log("YEY");
   const itemsPerPage = 9;
   const currentPage = parseInt(req.query.currentPage, 10) || 1;
   const photos = (req.query.photos || "[]");
